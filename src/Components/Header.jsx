@@ -3,14 +3,16 @@ import "./Header.css";
 import { FiHome, FiHelpCircle, FiInfo } from "react-icons/fi";
 import { MdBugReport } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
-import { FcSearch } from "react-icons/fc"
+import { FcSearch } from "react-icons/fc";
 
 const Header = () => {
   let navigate = useNavigate();
 
   return (
     <header class="css-16euuc9">
-      <h1 class="css-nedazh"><FcSearch/> IMAGE FORGERY DETECTION</h1>
+      <h1 class="css-nedazh">
+        <FcSearch /> IMAGE FORGERY DETECTION
+      </h1>
       <div class="css-1h5u173">
         <div title="Toggle code editor" class="css-548piz">
           <FiHome style={{ margin: "10px" }} />

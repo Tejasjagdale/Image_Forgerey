@@ -1,4 +1,5 @@
 import React from "react";
+import LsCard from "../Components/LsCard";
 import SfCard from "../Components/SfCard";
 
 const Home = () => {
@@ -18,7 +19,6 @@ const Home = () => {
       <div
         style={{
           width: "100vw",
-          //   backgroundColor: "black",
           display: "flex",
           justifyContent: "space-around",
           marginTop: "100px",
@@ -26,6 +26,17 @@ const Home = () => {
       >
         <SfCard data={content[0]} />
         <SfCard data={content[1]} />
+      </div>
+      <div
+        style={{
+          width: "100vw",
+          display: "flex",
+          justifyContent: "space-around",
+          marginTop: "100px",
+          marginBottom: "100px",
+        }}
+      >
+        <LsCard />
       </div>
     </>
   );
