@@ -99,10 +99,9 @@
                   aria-hidden="true"
                 ></span>
               </div>
-              <h4><a href="#">Upload Images</a></h4>
+              <h4><a href="#">Upload Image</a></h4>
               <h4>
-                Convert handwritten text images to text. with our machine learning
-                model
+                Upload image you want to check.
               </h4>
               <div >
                 <form
@@ -110,30 +109,7 @@
                   enctype="multipart/form-data"
                   method="post"
                 >
-                  <input type="file" name="file1" /><br />
-                  <p>Please select the decoder type:</p>
-                  <input
-                    type="radio"
-                    id="wordbeamsearch"
-                    name="decoder"
-                    value="wordbeamsearch"
-                  />
-                  <label for="age1">wordbeamsearch</label><br />
-                  <input
-                    type="radio"
-                    id="bestpath"
-                    name="decoder"
-                    value="bestpath"
-                    checked="checked"
-                  />
-                  <label for="age2">bestpath</label><br />
-                  <input
-                    type="radio"
-                    id="beamsearch"
-                    name="decoder"
-                    value="beamsearch"
-                  />
-                  <label for="age3">beamsearch</label><br /><br />
+                  <input type="file" name="file1" accept=".jpeg,.jpg,.png,.jfif" /><br />
                   <button type="submit" class="btn btn-warning">
                     <i
                       class="bi bi-cloud-arrow-up"
@@ -145,68 +121,6 @@
               </div>
             </div>
           </div>
-
-          <!-- <div class="col-md-6 col-sm-6 col-xs-12" style="margin-top: 20px;border: 2px solid black;;padding:20px">
-            <div class="service-items">
-              <div
-                class="icon"
-                style="
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                "
-              >
-                <span
-                  class="glyphicon glyphicon-file"
-                  aria-hidden="true"
-                ></span>
-              </div>
-              <h4><a href="#">Upload Line image</a></h4>
-              <h4>
-                Convert handwritten text images to text. with our machine
-                learning model
-              </h4>
-              <div>
-                <form
-                  action="/lineimage"
-                  enctype="multipart/form-data"
-                  method="post"
-                >
-                  <input type="file" name="file2" /><br />
-                  <p>Please select the decoder type:</p>
-                  <input
-                    type="radio"
-                    id="wordbeamsearch"
-                    name="decoder"
-                    value="wordbeamsearch"
-                  />
-                  <label for="age1">wordbeamsearch</label><br />
-                  <input
-                    type="radio"
-                    id="bestpath"
-                    name="decoder"
-                    value="bestpath"
-                    checked="checked"
-                  />
-                  <label for="age2">bestpath</label><br />
-                  <input
-                    type="radio"
-                    id="beamsearch"
-                    name="decoder"
-                    value="beamsearch"
-                  />
-                  <label for="age3">beamsearch</label><br /><br />
-                  <button type="submit" class="btn btn-warning">
-                    <i
-                      class="bi bi-cloud-arrow-up"
-                      style="font-size: x-large"
-                    ></i>
-                    Upload document
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </section>
