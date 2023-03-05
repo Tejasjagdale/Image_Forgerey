@@ -64,7 +64,7 @@ def main(input,output):
     else:
         net.cpu()
         net.load_state_dict(torch.load(model, map_location='cpu'))
-        print("Using CPU version of the net, this may be very slow")
+        # print("Using CPU version of the net, this may be very slow")
 
     mask = predict_img(net=net,
                        full_img=img,
