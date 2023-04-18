@@ -52,7 +52,7 @@ def main(input,output):
     network = 'Ringed_Res_Unet'
 
     img = Image.open('static/'+input)
-    model = 'model_9742_67.pkl'
+    model = 'model1.pth'
 
 
     net = Ringed_Res_Unet(n_channels=3, n_classes=1)

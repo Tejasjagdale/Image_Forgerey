@@ -22,9 +22,15 @@ def hello_world():
 @app.route("/wordimage", methods = ['GET','POST'])
 def word():
     if request.method == 'POST':
-        f = request.files['file1']
-        url = request.form['link']
-        f.save('static/input.png')
+        f = None
+        url = None
+        if(bool(request.form)):
+            url = request.form['link']
+        if(bool(request.files)):
+            f = request.files['file1']
+
+        if(f):
+            f.save('static/input.png')
         if(url):
             urllib.request.urlretrieve(url, "static/input.png")
         lib.compressMe('static/input.png')
@@ -35,4 +41,4 @@ def word():
         return render_template('output.html',name=result[0],prob= result[1] )
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,port=8001)

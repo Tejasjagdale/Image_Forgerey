@@ -42,7 +42,6 @@ def cluster():
     mask = labels_mask
     result = predict.mask_to_image(mask)
     result.save('static/output2.png')
-
     return percentage(img)
 
 def percentage(img):
